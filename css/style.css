@@ -14,6 +14,11 @@
   --font-family: 'Roboto', sans-serif;
   --second-family: 'Raleway', sans-serif;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -25,6 +30,13 @@ a {
 }
 li {
   list-style-type: none;
+}
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.container-padding {
+  padding: 120px 0;
 }
 .title {
   font-weight: 700;
@@ -42,6 +54,10 @@ button {
 button:focus {
   background-color: #404bbf;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 .span-logo {
   font-weight: 700;
   font-size: 18px;
@@ -51,6 +67,7 @@ button:focus {
   color: #2e2f42;
 }
 .logo {
+  margin-right: 76px;
   color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
@@ -58,6 +75,15 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu ul {
+  display: flex;
+  gap: 40px;
 }
 .menu-item {
   font-family: var(--font-family);
@@ -72,8 +98,14 @@ button:focus {
 .menu-item:focus {
   color: #404bbf;
 }
-.contact {
+.contact ul {
+  display: flex;
   font-style: normal;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header a {
+  padding: 24px 0;
 }
 .contact-item {
   font-family: var(--font-family);
@@ -83,14 +115,25 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
 .contact-item:hover {
   color: #404bbf;
 }
 .contact-item:focus {
   color: #404bbf;
 }
+
 .hero {
   background: var(--navy-blue);
+  display: flex;
+  justify-content: center;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 498px;
+  padding: 188px 0;
 }
 .hero-title {
   font-family: var(--font-family);
@@ -100,6 +143,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -111,11 +155,19 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .hero-btn:hover {
   background: var(--ocean);
 }
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
 .features-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -123,6 +175,7 @@ button:focus {
   font-family: var(--font-family);
   color: #2e2f42;
 }
+
 .features-text {
   font-weight: 400;
   font-size: 16px;
@@ -131,11 +184,17 @@ button:focus {
   color: var(--slate);
   font-family: var(--font-family);
 }
+
 .team {
   background-color: #f4f4fd;
 }
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .team-title {
   font-weight: 500;
