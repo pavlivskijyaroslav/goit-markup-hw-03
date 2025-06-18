@@ -39,8 +39,11 @@ img {
   max-width: 1158px;
   margin: 0 auto;
 }
-.container-padding {
+/* .container-padding {
   padding: 120px 0;
+} */
+.visually-hidden {
+  display: none;
 }
 .title {
   margin-bottom: 72px;
@@ -174,11 +177,17 @@ button:focus {
 .hero-btn:hover {
   background: var(--ocean);
 }
+
+.features {
+  padding: 120px 0 120px;
+}
 .features-list {
   display: flex;
   gap: 24px;
 }
-
+.features-item {
+  width: calc((100% - 72px) / 4);
+}
 .features-title {
   margin-bottom: 8px;
   font-weight: 500;
