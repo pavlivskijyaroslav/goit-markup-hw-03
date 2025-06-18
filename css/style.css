@@ -218,19 +218,24 @@ button:focus {
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 .team-item {
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding-bottom: 32px;
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
 }
+.team-item-container {
+  padding: 32px 0;
+}
 .team-title {
-  padding: 32px 0 8px 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -238,6 +243,10 @@ button:focus {
   text-align: center;
   font-family: var(--font-family);
   color: #2e2f42;
+  margin-bottom: 8px;
+}
+.team-text {
+  text-align: center;
 }
 .portfolio-list {
   display: flex;
